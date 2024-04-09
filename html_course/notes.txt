@@ -3,8 +3,32 @@
 
 1) is NECESSARRY for all html files
 2) determines that all the stuff inside is html 
-3) doesn't actually show but is considered the title
+3) doesn't actually show but is considered the title <title> changes the tab name <meta name= "description" content= "thisis" it'll show underneath title on google search
 4) does actually show
 
 <element></element> considered start tag and end tag and has info inside
 <empty> empty tag like an image tag
+
+In body 
+<header><nav></nav></header>
+- these tags define the elements but its not a direct change
+<hr> horizontal rule
+<footer> hangs on ths bottom of page
+
+HTML entities are special symbols that mess up certain written code "<"
+-to remedy use &# with a special code
+
+
+Meaningless elements
+    - div: content is in a different line
+    - span: content is in the same line
+<br> breaks distant
+<!-- --> comment
+
+<strong> bolds it
+
+
+anchor tag <a> allows us to link stuff
+    -<a href="file.html"> Link Text </a>
+    -target = "_self" it opens on itself
+    -target - "_blank" it will open as another tab like a popup
