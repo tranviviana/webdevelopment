@@ -1,0 +1,10 @@
+1)<!DOCTYPE html>
+2)<html>3)<head>4)<body></body></head></html>
+
+1) is NECESSARRY for all html files
+2) determines that all the stuff inside is html 
+3) doesn't actually show but is considered the title
+4) does actually show
+
+<element></element> considered start tag and end tag and has info inside
+<empty> empty tag like an image tag
