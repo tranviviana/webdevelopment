@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div>
+            <label for="name">Name</label>
+       <input name="name" id="name" type="text" placeholder="user" required> 
+        </div>
+        <div>
+            <label>Password
+            <input name="password" type="password">
+            <!---another way to do the highlight thing instead of for-->
+            </label>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+            <label for="eyes">Eyecolor</label>
+            <select name="eyes" id="eyes" multiple>
+                <option value="Green">Green</option>
+                <option label="Red" value="Red">Red</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="BIO">my nadjfklajef </textarea>
+        </div>
+        <div>
+            <label for="file">FILE</label>
+            <input id="file" type="file" name="FILE">
+        </div>
+       <button type="reset">reset</button>
+       <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

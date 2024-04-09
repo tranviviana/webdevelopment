@@ -32,3 +32,30 @@ anchor tag <a> allows us to link stuff
     -<a href="file.html"> Link Text </a>
     -target = "_self" it opens on itself
     -target - "_blank" it will open as another tab like a popup
+
+
+
+Forms
+! enter = boiler point stuff
+<form action= -- where form is submitting to method="GET" --append to url and send to other site > 
+--POST ---send to backend
+<label for="id" --highlights (makes clicky thing) what it is for when clicked> -- name to put before
+<input name="fhdjks" --- essentially like a label for the inputs value="User"--default value placeholder="user" default greyed out (can be replaced) required---have to put something in > 
+input-- location to put stuff
+when input is type ="number" can set min to be a number and max to be another numebr
+
+<lael for="male">Male</label><input type="radio" name ="gender" id="male> ---allows for only one checkbox to be checked NEED general name value --to gather data
+select --options == dropdown
+ <select name="eyes" id="eyes">
+                <option value="Green">Green</option>
+                <option label="Red" value="Red">Red</option>
+            </select>
+            the label section make sure under same drop
+
+  <select name="eyes" id="eyes" multiple> multiple -- for multiple selects
+
+
+need more space? use text area
+
+FOR AND ID are same names
+</form>
