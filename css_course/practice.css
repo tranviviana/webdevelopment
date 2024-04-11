@@ -6,7 +6,9 @@
 .box-one {
     background-color: #EB5757;
     border: 0 solid purple;
-    padding: 20px
+    padding: 20px;
+    border: 30px solid yellow;
+    margin: 60px;
 }
 .box-two {
     background-color: #2D9CDB;

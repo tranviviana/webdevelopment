@@ -16,3 +16,58 @@ specificity - css runs top to bottom (overrides as you read)
 
 
 box model
+    - padding goes around content kinda like background space
+    - border around padding
+    - margin around both elements collapses between items next to each other
+    - height and width affect the size of the text inside (height does not account for margin)
+    - box-sizing borderbox: padding and border is accounted to the height and width (makes the actual element smaller)
+
+positioning
+    - static- follows watever in follows
+    - relative - allows you to change sides outside of the document flow (usually dont use)
+    - absolute - removes element from document flow so everything else renders around it
+    - fixed - position for entire html, kinda good for navbar 
+    - sticky - relative + fixed, better for navbar because stick if scrolled
+
+display 
+    - block - all content in full width
+    - inline - as small as they can
+    - inline-block - height and width can be controlled
+    - none - doesnt exist
+    - flex - allows you to style from container and not having to change the actual item itself
+        - main is the x axis cros is the y axis 
+        - justify-content - aligns by main
+        - align-items - aligns by cross
+        - flex-wrap wrap rows by shrinking
+        - flex-shrink/grow controls how much an item is affected when pulled for size 
+        - flex-basis standardizes the growth instead of relative to one anotehr
+    - css grid - container in two directions 
+        - grid-template-columns: size size size or fraction fraction fraction
+        - grid-auto-rows: minmax(120, auto) allows for minimum size and auto resize based on content
+        - grid-row-gap: puts a little split between groupings
+        - grid-template-areas: "header sidebar content"
+            - grid item grid-area: header allows you to realign like a "template"
+        - grid-column-start: number remember thta the sides are like 1->2 2_.3 etc
+
+calc function 
+    - calc(num num) basic arithmetic can do different units too 
+        - width: calc(100% - 30px);
+        - margin: 0 auto; centers it based on the given size (center with 30 px padding essentially)
+        -var(--width) --width variable declaration
+
+Pseudoelement:: gives you some "auto control"
+    - before and after 
+    - required :: before { width height etc.         content:""} NEEDS content element needs a start and end tag
+
+CSS variable   
+    - declare in root --div-brackground-color (use as name)
+        - var(--div-brachgroun-color, default)
+
+media queries 
+    - @media type of device (screen speech print or all) and (max-width: 500px) runs stuff in this style
+    -orientation: landscape portrait
+container query
+    - stronger version of media query because it controls specific container
+    - container-type: inline-size or size-type
+
+may need to review CSS animation https://www.youtube.com/watch?v=rrLAg7xNERA
