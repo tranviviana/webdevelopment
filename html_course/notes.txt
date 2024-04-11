@@ -59,3 +59,6 @@ need more space? use text area
 
 FOR AND ID are same names
 </form>
+
+<form action="results.html" method="GET" enctype="multipart/form-data">
+--allows us to submit via multiparts

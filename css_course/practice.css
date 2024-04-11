@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+.box-one {
+    background-color: #EB5757;
+    border: 0 solid purple;
+    padding: 20px
+}
+.box-two {
+    background-color: #2D9CDB;
+    border: 0 solid green;
+}

@@ -1,0 +1,18 @@
+initial style < browser sheets < custom styling
+
+inheritance occurs for most elements (like if i have a div around a p the p will have the same style )
+    - one that doesn't is border
+    - can say inherit 
+
+all -> sets everything toether unset inherit and initial
+rever -> default to browser 
+
+
+specificity - css runs top to bottom (overrides as you read)
+    - class selectors are more specific so it will finish there
+    - 0000 - ids change second column, classes change third column, elements change fourth column, first column is inline style
+        - first column is left most
+    - !important OVERRIDES 
+
+
+box model
