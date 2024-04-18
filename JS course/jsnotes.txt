@@ -1,0 +1,21 @@
+JS loading
+    - js file pauses to download and then goes through the rest 
+        - ASYNC tag asynchronously downloads and pauses HTML parsing during execution
+        - DEFER tag asynchronously downloads... executes after html is done parsing
+    - <script defer or asyng src = "large.js></script>
+
+Var, Let, and Const
+    - var: function scope accessible throughout the function, can be redefined within the function
+        - var variable can be declined after usage; usage will say undefined tho
+    - let and const: block scoped (if or loop) CAN NOT overwrite
+        - const can change properties inside 
+        - let lets you change value (iterator)
+
+Creating and Using Functions
+    - if arguments not passed through, set to undefined
+    - return for needed outputted
+    CALLBACKS
+    - a function is just an object in js
+
+
+    
