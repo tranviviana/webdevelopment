@@ -17,5 +17,55 @@ Creating and Using Functions
     CALLBACKS
     - a function is just an object in js
 
+Arrow Functions 
+    - no function key word
+    - lambda function () => actions
+    - changes .name in a regular function call because function key word is scoped so this is in where it is called
 
-    
+Hoisting 
+    - when makaing a function with functino key words, it is moved to the top so functios with function keyword can be declared anywhere
+        - same thing happens with var
+
+Closures
+    - stuff outside of the function being accessible in function
+    - global variables (const) accessible everywhere
+
+JS equality 
+    - == takes the type and converts to the same thing
+    - === considers the type along with the content
+    - == use when you wanna see null (null == undefined)
+
+Objects and arrays
+    - const a = ["A", "B", "C"]
+        - 0 indexed
+        -(a[0])
+        -.push([1,2]) kinda like append but puts in directly what you put so its a nested array  
+
+Pass by value versus pass by reference 
+    - value = copies whatever is on the right side into a value (points to value)
+    - reference = doesnt copy puts in an address
+        - changes will change all
+    - js is pass by value but when dealing with objects arrays and functions it is pass by reference
+DOM traversal 
+    - const = grandparents document.getElementById("grandparent.id) selects a certain id 
+    - with classname Array.from -->changes into array 
+    - document.querySelector(#grandparent-id") querySelectorAll(.class)
+    - .child .parent traverse object hierarchy in HTML .closest(".grandparent") goes up to closest thing you want
+    - sibling elements childOne.nextElementSibling
+DOM manipulation
+    - adding to the boxy const body = document.body body.append("helloworld")
+    - const div = document.createElement("div") body.append(div) div.innerText or div.textContent
+        - innertext () will return what is shown on page
+        - textContent will return EVERYTHING in div
+        - innerHTML u can put html into
+    -.append and .remove or .removeChild to remove stuff
+    -const.getAttribute('fdjskaf') gets a certain getAttribute
+    - const. setAttribute ('','fdsaf')
+    - const.removeAttribute("id")
+    -const.dataset (access data.something)
+    -getting classes
+        -.classList (add remove etc .toggle)
+Event Listeners
+    -event bubbling - where the code works from closest out (leaf to tree)
+    -event capturing - work outside in (capture : true) everything comes out "backwards" e.stopPropagration aka stops everything at the point
+    -e is like an object e.target.something works with objects in the screen
