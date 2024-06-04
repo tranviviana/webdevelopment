@@ -10,19 +10,19 @@
 </head>
 <body>
     <div class = "selections">
-        <button class="selection">🪨</button>
-        <button class="selection">📃</button>
-        <button class="selection"> ✂</button>
+        <button class="selection" data-selection="rock">🪨</button>
+        <button class="selection" data-selection="paper">📃</button>
+        <button class="selection" data-selection="scissors"> ✂</button>
     </div>
     <div class="results">
         <div>You
-            <span class="result-score">0</span>
+            <span class="result-score" data-your-score>0</span>
         </div>
-        <div>Computer
-            <span class="result-score">0</span>
+        <div data-final-column>Computer
+            <span class="result-score" data-comp-score>0</span>
         </div>
-        <div class="result-selection winner">🪨</div>
-        <div class="result-selection"> ✂</div>
+        <!-- <div class="result-selection winner">🪨</div>
+        <div class="result-selection"> ✂</div> -->
     </div>
 </body>
 </html>
