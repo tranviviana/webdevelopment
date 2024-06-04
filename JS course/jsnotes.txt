@@ -85,3 +85,46 @@ JS Promises
         - await waits for something to happen async will work elsewhere until it is done.
         - to catch error try {} catch (err) {stuff that happens if something is wrong}
         - asyn function dowork ---> const something = await function
+Fetch API 
+    - fetch(api url) { options } .then(res => console.log(res.json()).then(data =>  res.json))) .catch(error => console.log('ERROR')))
+    - check res (response number)
+    -options--> method: 'POST', body: {name: 'USER 1:} JSON stringify
+    - headers: {Content-Type} body needs to be stringified -->JSON.stringify 
+Storing Data in Browser (Cookies, local store, session store)
+    - (refer to pic)
+    - usually use local and session unless send something then Browser
+    - applicaiton section
+    - localStorage.(object method)
+    - sessionStorage. 
+    - document.cookie = 
+Event loop modules (ES6)
+    - import and export code from different files so its easier to read and categories
+    - export defult User or export { printName, printAge}
+        - exports user object as default to file --> exports function
+    - inline just say export -->
+    - import User {non default stuff} from (./user.js)
+    - in HTML need to have <script type="mpdule" src="main.js"></script> --> main.js 
+Null versus Undefined error
+    - Same == theres no value for them so == is true but === is false
+    - null requires a specific return (programmer MUST say)
+    - undefined - nothing YET
+Parcel 
+    - auto webpack (essentially bundling and everything for us) 
+    - nom -i -save-dev parcel-bundler
+JS array methods
+    - filter items.filter(() => { return item.price
+    })
+        - arrow function 
+    -map (() => {}) like lambda function
+    -find(()=> {})
+    - for each no need for a return statement but still uses a lambda function
+    - .some return needed (kind of like any function)
+    - .every return needed (kind of like all function)
+    - .reduce((result, array) => {fucntions}, starting point)
+    - .includes(check value)
+template literals 
+    - like f string  `${variable} fdjkaljfdka ${variable} `
+destructuring 
+    - const[a, b ,c] = alphabet --> returns the three elements
+    - [...rest] gives the rest 
+    - [... alphabet, ... numbers] spreads and combines both arrays 
