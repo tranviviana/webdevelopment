@@ -69,3 +69,19 @@ Event Listeners
     -event bubbling - where the code works from closest out (leaf to tree)
     -event capturing - work outside in (capture : true) everything comes out "backwards" e.stopPropagration aka stops everything at the point
     -e is like an object e.target.something works with objects in the screen
+JS Promises
+    - commit to something (resolved or rejected)
+    - let p = new Promise((resolve, reject) => {    ______> resolve and reject are functions
+            let a = 1 + 1 
+    if (a == 2) {
+        resolve {else reject}
+    }
+    })
+    - p.then((message) => {}).catch((message "fail" ))   call p.then (resolve).then(reject)
+    - Promise.all([promises promise])
+    - const p = new promise((resolve,reject))
+    - .race return fastest one that is right
+    ASYNC AWAIT
+        - await waits for something to happen async will work elsewhere until it is done.
+        - to catch error try {} catch (err) {stuff that happens if something is wrong}
+        - asyn function dowork ---> const something = await function
