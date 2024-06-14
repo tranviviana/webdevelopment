@@ -1,0 +1,11 @@
+the why React 
+    - makes UI easier through being a JS library
+    - components point to some html
+    - declarative, component-based (encapsulation of more and more stuff)
+JSX props
+    - props: arguments to a function EXTERNAL
+        - what it takes in - good for less changes like displaying a name
+    - state: what is already INSIDE a component
+        - rerenders when made - good for updates like counters
+State
+    
