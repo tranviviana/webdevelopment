@@ -7,5 +7,19 @@ JSX props
         - what it takes in - good for less changes like displaying a name
     - state: what is already INSIDE a component
         - rerenders when made - good for updates like counters
-State
-    
+State-React Hooks
+    - Use-State 
+        - to start npx create-react-app .
+        - npm start to start the application 
+        - can only be used in FUNCTION components NOT class components
+        - always execute in sequential order --> hooks must be called in the exact same order in every component render
+        -useState(starting_point)
+        - return const [count, setCount] = useState(starting point) first is the current state and the second is the function that is happening to it setCount(what is happening to number)
+        - setCount(prevCount => 
+      prevCount + 1) ---- use function version or it wont work properly
+      - can have starting point be a function version as well useState () => {
+        console.log('run function')
+        return 4
+      } --- this version when wanted to be run ONCE
+useEffect - react Hook
+    -      
