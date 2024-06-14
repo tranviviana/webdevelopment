@@ -22,4 +22,27 @@ State-React Hooks
         return 4
       } --- this version when wanted to be run ONCE
 useEffect - react Hook
-    -      
+    - query json api
+    - import React, {useEffect} from 'react'
+    - useEffect (() = {
+        console.log('blah'), [resourceType]
+    })
+        - first is what happens, second is the thing we are looking to that is changing
+        - empty [] will give you onMount 
+        - useEffect(() => {
+            fetch (`https://json) .then (respone => response.json(()) . then (json => setItems(json)), [resourceType])
+        })
+        - event listener and then clean up!
+         useEffect(() => {
+            console.log()
+            return () => {
+                console.log("done")
+            }
+        
+         }, [listening to these changes])
+Strict Mode 
+    -In index it has strictmode React.strictmode
+        - really only is affected in development
+        - React = render and commit stages everything run twice
+    - certain function will be cut out if deprecated 
+
