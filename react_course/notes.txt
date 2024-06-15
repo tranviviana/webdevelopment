@@ -122,3 +122,9 @@ Router
         - Link to "/" reloadDocument reloads the whole document
         - Linke to state to pass to everything elements
         - NavLink style = {{is Active}} shows what is currently happening
+Portals to build Modals
+    - rsc (short cut)
+Use Layout --- avoiding the flash
+    - not asynchronous (calculate at current state)
+    - useEffect first and then use layout effect
+    - useEffect runs dom and then puts it where it has to be while layout loads it in the backend and then releases
