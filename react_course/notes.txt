@@ -38,11 +38,87 @@ useEffect - react Hook
             return () => {
                 console.log("done")
             }
-        
+        status
+
          }, [listening to these changes])
 Strict Mode 
     -In index it has strictmode React.strictmode
         - really only is affected in development
         - React = render and commit stages everything run twice
     - certain function will be cut out if deprecated 
+Fragment
+    -<> </> returns multiple elements without extra bog down (better grouped return)
+useRef Hook
+    -object {current} useRef(startingPoint)
+    - current,current = fdjlfjdlksa 
+useMemo
+    -allows us to not rerun caching
+        -const doubleNumber = useMemo(() => { return slowFunction(number) } , [number])})
+useCallback
+    - doesnt rerender un;ess value ACTUALLY changes 
+    - useCallbacl (()=> {return}, [number])
+    - retunrs the function while memo returns the value
+customReact Hooks  
+    - allows us to store variable in local storage
+    import {useState} from react
+    function geSavedValue (key, initialValue) {
+        const saveValue = JSON.parse(localStorage.getItem(key))
+        if (savedValue) return savedValue 
+        if initialValue instanceof Funtion return initialValue()
+        return initialValue
+    }
+    export default function useLocalStorage(key, initialValue) {
+        const [value, setValue] = useState(()= > {
+            return getSavedValue(key,initialValue)
+        })
+        useEffect(() => {
+            localStorage.setItem(key,JSON.stringify{value})
+        }), [value])
+    }
+useReducer
+    - returns an array [state, dispatch] userReducer(function, object)
+    - dispatch{type: increment} what it calls and state is current state
+    - function (state, action) {
+        switch (action.type) {
+            changes -> return case -> return default : fjdklajdf
+        }
+    }
+Context
+    - contect is passing down to all the other components
 
+    - ThemeContext.provider value = {darkThe}> ----> </ThemeContext,provider>
+    -in kids import {ThemeContext } from ./app 
+    - const darkTheme = useContext{ThemeContext} --> essentially passing down variable
+
+
+
+Router
+    -https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2JfVENqeEJVYm9BY01CQWsyTTlpVVFMZWZtd3xBQ3Jtc0trcnA5QzNENUREWEwtRzhIdGNLM3M1bE9Na0h2MzVseVY2TGU4dmZJa2J1ZEZDWUNRd3JFXzk2LTVnOXgydUl0NG5VbjVUek8wTV9aaW9OSWxHSnhlTDBXLW8tOHNEcW1udGZhd2pPU1JLM0dONEdOMA&q=https%3A%2F%2Fblog.webdevsimplified.com%2F2022-07%2Freact-router&v=Ul3y1LXxzdU
+    - The Basics
+        - npx create-react-app . --> npm i react-router-dom/ react-router-native
+        - wrap entire application in router of your choice (index)
+        - import { BrowserRouter } from react router dom
+        - define routes (APP) return Routes and each on will have a <Route path='/' element = {<Home />} />
+        -<Link to = "/"> Home> </Link> connects to different routes
+        - use BROWSER ROUTER
+
+
+
+        -HashRouter instead of /name it is saved as #/name
+        - MemoryRouter just stores in the memory (can go backwards and using tests)
+        -StaticRouter doesnt let us change to different routers: tells which one you are on CURRENTLY
+    - Routing 
+        - Dynamic Routing (books page with book id)
+            - <Route path="books/:id" element = {<Book />}
+            - import { useParams } from "react-router-dom" const {id} = useParams it gives all the parameters to access
+            - can nest if have same name <Route path="/books"?
+                Route index element= {BookList}
+                Route path = ":id" element = {Book}
+
+
+    - Navigating between Routes
+        - Link tags <List to="/"> </Link> Links TOOOO something
+        - Link tage <Ling to="/> replace> </Link> Links BACK to something 
+        - Link to "/" reloadDocument reloads the whole document
+        - Linke to state to pass to everything elements
+        - NavLink style = {{is Active}} shows what is currently happening
